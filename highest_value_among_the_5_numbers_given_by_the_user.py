@@ -3,7 +3,24 @@
 #input for the 3rd num
 #input for the 4th num
 #input fot the 5th num
+while True:
+   first_number = input("Input the first number (any range): ")
+   if first_number.isdigit():
+        break
+   else:
+        print("Invalid input, must be a digit.")
+        print("Please try again.")  
 
+while True:         
+   second_number = input("Input the second number (any range): ")
+   if second_number.isdigit():
+        break
+   else:
+        print("Invalid input, must be a digit.")
+        print("Please try again.")
+                  
+            
+ 
 #var for the max value
 #var for the number/s with the max value
 
