@@ -43,10 +43,10 @@ while True:
         print("Invalid input, must be a digit.")
         print("Please try again.")
                   
-            
- 
 #var for the max value
+maximum_value = max(first_number, second_number, third_number, fourth_number, fifth_number)
 #var for the number/s with the max value
+number_or_numbers_with_the_maximum_value = []
 
 #if the max value is == to the 1st num
      #then var for the number/s with the max value will bear the str '1st Number' together with the .append() method
@@ -58,5 +58,16 @@ while True:
      #then var for the number/s with the max value will bear the str '4th Number' together with the .append() method
 #if the max value is == to the 5th num
      #then var for the number/s with the max value will bear the str '5th Number' together with the .append() method
+if maximum_value == first_number:
+    number_or_numbers_with_the_maximum_value.append('1st Number')
+if maximum_value == second_number:
+    number_or_numbers_with_the_maximum_value.append('2nd Number')
+if maximum_value == third_number:
+    number_or_numbers_with_the_maximum_value.append('3rd Number')
+if maximum_value == fourth_number:
+    number_or_numbers_with_the_maximum_value.append('4th Number')
+if maximum_value == fifth_number:
+    number_or_numbers_with_the_maximum_value.append('5th Number')   
 
 #print the var for the number/s with the max value together with the var for the max value
+print(f'The {", ".join(number_or_numbers_with_the_maximum_value)} have the maximum value: {maximum_value}')
