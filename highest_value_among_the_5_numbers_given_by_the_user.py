@@ -53,31 +53,28 @@ while True:
         print("Invalid input, must be a digit.")
         print("Please try again.\n")
                   
-#var for the max value
-highest_value = max(first_number, second_number, third_number, fourth_number, fifth_number)
-#var for the number/s with the max value
-number_or_numbers_with_the_highest_value = []
+#var for the assumed initial/current highest value = 1st Number
+highest_value = first_number
 
-#if the max value is == to the 1st num
-     #then var for the number/s with the max value will bear the str '1st Number' together with the .append() method
-#if the max value is == to the 2nd num
-     #then var for the number/s with the max value will bear the str '2nd Number' together with the .append() method
-#if the max value is == to the 3rd num
-     #then var for the number/s with the max value will bear the str '3rd Number' together with the .append() method
-#if the max value is == to the 4th num
-     #then var for the number/s with the max value will bear the str '4th Number' together with the .append() method
-#if the max value is == to the 5th num
-     #then var for the number/s with the max value will bear the str '5th Number' together with the .append() method
-if highest_value == first_number:
-    number_or_numbers_with_the_highest_value.append('1st Number')
-if highest_value == second_number:
-    number_or_numbers_with_the_highest_value.append('2nd Number')
-if highest_value == third_number:
-    number_or_numbers_with_the_highest_value.append('3rd Number')
-if highest_value == fourth_number:
-    number_or_numbers_with_the_highest_value.append('4th Number')
-if highest_value == fifth_number:
-    number_or_numbers_with_the_highest_value.append('5th Number')   
+#if the 2nd Number is > the current highest value
+     #then the current highest value is now the 2nd Number
+if second_number > highest_value:
+     highest_value = second_number
 
-#print the var for the number/s with the max value together with the var for the max value
-print(f'\nThe {", ".join(number_or_numbers_with_the_highest_value)} have the highest value: {highest_value}\n')
+#if the 3rd Number is > the current/latest highest value
+     #then the current/latest highest value is now the 3rd Number
+if third_number > highest_value:
+     highest_value = third_number      
+     
+#if the 4th Number is > the current/latest highest value
+     #then the current/latest highest value is now the 4th Number
+if fourth_number > highest_value:
+     highest_value = fourth_number
+
+#if the 5th Number is > the current/latest highest value
+     #then the current/latest highest value is now the 5th Number
+if fifth_number > highest_value:
+     highest_value = fifth_number           
+
+#print the var containing the highest value 
+print(f'\nThe highest value: {highest_value}\n')
