@@ -18,6 +18,30 @@ while True:
    else:
         print("Invalid input, must be a digit.")
         print("Please try again.")
+
+while True:         
+   third_number = input("Input the third number (any range): ")
+   if third_number.isdigit():
+        break
+   else:
+        print("Invalid input, must be a digit.")
+        print("Please try again.")    
+
+while True:         
+   fourth_number = input("Input the fourth number (any range): ")
+   if fourth_number.isdigit():
+        break
+   else:
+        print("Invalid input, must be a digit.")
+        print("Please try again.")
+
+while True:         
+   fifth_number = input("Input the fifth number (any range): ")
+   if fifth_number.isdigit():
+        break
+   else:
+        print("Invalid input, must be a digit.")
+        print("Please try again.")
                   
             
  
