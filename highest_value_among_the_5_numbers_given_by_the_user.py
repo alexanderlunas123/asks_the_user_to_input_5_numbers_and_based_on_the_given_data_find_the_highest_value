@@ -6,6 +6,7 @@
 while True:
    first_number = input("Input the first number (any range): ")
    if first_number.isdigit():
+        first_number = int(first_number)
         break
    else:
         print("Invalid input, must be a digit.")
@@ -14,6 +15,7 @@ while True:
 while True:         
    second_number = input("Input the second number (any range): ")
    if second_number.isdigit():
+        second_number = int(second_number)
         break
    else:
         print("Invalid input, must be a digit.")
@@ -22,6 +24,7 @@ while True:
 while True:         
    third_number = input("Input the third number (any range): ")
    if third_number.isdigit():
+        third_number = int(third_number)
         break
    else:
         print("Invalid input, must be a digit.")
@@ -30,6 +33,7 @@ while True:
 while True:         
    fourth_number = input("Input the fourth number (any range): ")
    if fourth_number.isdigit():
+        fourth_number = int(fourth_number)
         break
    else:
         print("Invalid input, must be a digit.")
@@ -38,6 +42,7 @@ while True:
 while True:         
    fifth_number = input("Input the fifth number (any range): ")
    if fifth_number.isdigit():
+        fifth_number = int(fifth_number)
         break
    else:
         print("Invalid input, must be a digit.")
