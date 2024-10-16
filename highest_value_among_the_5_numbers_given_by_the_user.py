@@ -59,9 +59,9 @@ highest_value = first_number
 number_with_the_highest_value = 'first number'
 
 
-#if the 2nd Number is > the current highest value
-     #then the current highest value is now the 2nd Number
-     #then the current number with the highest value is now the 2nd Number(string)
+#if the 2nd Number is > the assumed initial/current highest value
+     #then the current/latest highest value is now the 2nd Number
+     #then the current/latest number with the highest value is now the 2nd Number(string)
 if second_number > highest_value:
      highest_value = second_number
      number_with_the_highest_value = 'second number'
@@ -88,4 +88,4 @@ if fifth_number > highest_value:
      number_with_the_highest_value = 'fifth number'      
 
 #print the var containing the number with the highest value together with the var containing the highest value itself
-print(f'\nThe {number_with_the_highest_value} have the highest value: {highest_value}\n')
+print(f'\nThe "{number_with_the_highest_value}" have the highest value: {highest_value}\n')
